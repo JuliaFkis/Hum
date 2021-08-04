@@ -625,5 +625,7 @@ background-color: #fff ;
 .white-text{
     color: #fff;
 }
-
+.hide{
+    display: none;
+}
 /*-----------------------------------------*/
