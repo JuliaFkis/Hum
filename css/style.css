@@ -509,18 +509,9 @@
     margin-bottom: 10px;
 }
 .reviews-img{
-    margin-top: 50px;
-    z-index: 1;
-    
-}
-.elipce{
+    margin-top: 50px;  
+    border: 12px solid rgb(31, 218, 181, 0.2);;
     border-radius: 100px;
-    background-color: rgba(31, 218, 181, 0.2);
-    width: 166px;
-    height: 166px;
-    z-index: 1;
-    margin: 0 auto;
-    margin-top: -157px;
 }
 
 .carousel{
@@ -533,11 +524,11 @@
 }
 .left-arrow{
     margin-right: 30px;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 .right-arrow{
     margin-left: 30px;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 .hover-arrow:active rect, .hover-arrow:hover rect{
     fill-opacity: 100;
@@ -545,28 +536,16 @@
     stroke-opacity: 0;
 }
 
-.carousel-img{
-    position: relative;
-    z-index: 1;
-}
 .carousel-people-img{
     height: 58px;
     width: 58px;
     margin-left: 19px;
     margin-right: 19px;
+    border: 6px solid rgb(31, 218, 181, 0.2);;
+    border-radius: 100px;
    
 }
 
-.elipce-small{
-    border-radius: 100px;
-    width: 70px;
-    height: 70px;
-    background-color: rgba(31, 218, 181, 0.2);
-    position: absolute;
-    top: -5px;
-    left: 12px;
-    z-index: -1;
-}
 
 /*---------FOOTER--------*/
 
