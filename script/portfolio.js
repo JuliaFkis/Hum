@@ -17,10 +17,26 @@ for(let item of navFilterPortfolio){
         }
     }
     })
-
 })
-  
 }
+
+
+// Обсудить с ментором ошибку в кнопке 
+const btn = document.querySelector(".portfolio-btn")
+btn.addEventListener("click",()=>{
+    portfolioImg.forEach((i)=>{
+        if(i === true){
+            i[12,24].classList.remove("hide")
+        } else {
+            i[12,24].classList.add("hide")
+        }
+        })
+    })
+
+
+
+
+
 
 
 
