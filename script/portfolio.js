@@ -34,19 +34,17 @@ for(let item of navFilterPortfolio){
 const btn = document.querySelector(".portfolio-btn")
 
 let hidenPortfolioImg = document.querySelectorAll(".portfolio-card")
-hidenPortfolioImg = Array.from(hidenPortfolioImg)
-hidenPortfolioImg.slice(12)
-console.log(hidenPortfolioImg);
-
 
 btn.addEventListener("click",()=>{
-    hidenPortfolioImg.forEach((i)=>{
-        if(!"click"){
-            i.classList.add("hide")
-        } else {
-            i.classList.remove("hide")
-        }
-        console.log(i);
-        
+hidenPortfolioImg = Array.from(hidenPortfolioImg)
+hidenPortfolioImg.forEach((el, index)=>{
+    if(el > index[12]){
+        el.classList.add("hide")
+    } else {
+        el.classList.remove("hide")
+    console.log(el);
+    }
     })
 })
+
+
