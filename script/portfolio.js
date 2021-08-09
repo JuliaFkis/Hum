@@ -23,28 +23,28 @@ for(let item of navFilterPortfolio){
 }
 
 
-// Обсудить с ментором ошибку в кнопке 
-// const btn = document.querySelector(".portfolio-btn")
-// btn.addEventListener("click",()=>{
-//     portfolioImg.forEach((i)=>{
-//        i.classList.toggle("hide")
-//     })
-// })
+// кнопка работает не корректно:
+// 1. при нажатии на all открываются все картинки, в т.ч. и скрытые
+// 2. при нажатии на любой из табов и нажатии на кнопку, 
+// к отфильтрованым картинкам прибавляютя все 12 скрытых
+
+
 
 const btn = document.querySelector(".portfolio-btn")
-
 let hidenPortfolioImg = document.querySelectorAll(".portfolio-card")
-
-btn.addEventListener("click",()=>{
 hidenPortfolioImg = Array.from(hidenPortfolioImg)
-hidenPortfolioImg.forEach((el, index)=>{
-    if(el > index[12]){
-        el.classList.add("hide")
-    } else {
-        el.classList.remove("hide")
-    console.log(el);
-    }
+const hiden = hidenPortfolioImg.slice(12,24)
+
+console.log(hiden);
+btn.addEventListener("click",()=>{
+hiden.forEach((el)=>{
+    el.classList.remove("hide")
     })
 })
+
+
+// изучить
+// фанкшн документ реди
+// инклюд
 
 
